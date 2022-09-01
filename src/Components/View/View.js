@@ -33,7 +33,7 @@ function View() {
                         <p>{postDetails.category}</p>
                         <span>{postDetails.createdAt}</span>
                     </div>
-                    { userDetails && <div className="contactDetails">
+                    {userDetails && <div className="contactDetails">
                         <p>Seller details</p>
                         <p>{userDetails.username}</p>
                         <p>{userDetails.phone}</p>

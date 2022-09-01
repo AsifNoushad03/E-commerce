@@ -1,12 +1,12 @@
-import React, {useContext} from 'react'
-import {Link, useHistory} from 'react-router-dom';
+import React, { useContext } from 'react'
+import { Link, useHistory } from 'react-router-dom';
 
-import {Authcontext, FirebaseContext} from '../../store/Context';
+import { Authcontext, FirebaseContext } from '../../store/Context';
 import './Navbar.css'
 function Navbar() {
-    const {user} = useContext(Authcontext)
+    const { user } = useContext(Authcontext)
     const history = useHistory()
-    const {firebase} = useContext(FirebaseContext)
+    const { firebase } = useContext(FirebaseContext)
     return (
         <div className='navbar'>
             <header>
@@ -21,15 +21,14 @@ function Navbar() {
                                 }
                             }>Logout</button>
                         }</li>
-                       <Link to="/create"> <button>Sell</button></Link> 
+                        <Link to="/create"> <button>Sell</button></Link>
 
                     </ul>
                 </nav>
                 <a className='cta' href='/'>
-                <Link to="/Login"> <button>{ 
-                        user ? `Welcome to ${
-                            user.displayName
-                        } ` : 'Login'
+                    <Link to="/Login"> <button>{
+                        user ? `Welcome to ${user.displayName
+                            } ` : 'Login'
                     }</button></Link>
                 </a>
                 <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="Avatar" className="avatar"></img>
