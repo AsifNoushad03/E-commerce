@@ -1,0 +1,29 @@
+.footerParentDiv {
+    width: 100vw;
+  }
+  .footerParentDiv .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ebeeef;
+    padding: 16px;
+  }
+  .footerParentDiv .content .heading {
+    font-size: 24px;
+    font-weight: bolder;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .footerParentDiv .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background:rgb(51, 102, 255);
+    color: whitesmoke;
+  }
+  
+  .footerParentDiv .footer p {
+    margin: 0;
+  }
+  
